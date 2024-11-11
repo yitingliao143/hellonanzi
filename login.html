@@ -4,8 +4,8 @@ session_start();
 include_once "dbconfig.php";
 
 // Define variables and initialize with empty values
-$username = $_POST["username"];
-$password = $_POST["password"];
+$username = $_GET["username"];
+$password = $_GET["password"];
 
 // Processing form data when form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
